@@ -5,7 +5,7 @@ import type { GitLabConfig, StatusMessage } from '../types'
 
 const emit = defineEmits<{ status: [msg: StatusMessage] }>()
 
-const { loadConfig, saveConfig } = useConfig()
+const { config, loadConfig, saveConfig } = useConfig()
 const saving = ref(false)
 
 const form = ref<GitLabConfig>({
@@ -18,7 +18,6 @@ const form = ref<GitLabConfig>({
 })
 
 onMounted(async () => {
-  const { config } = useConfig()
   await loadConfig()
   form.value = { ...config.value }
 })
