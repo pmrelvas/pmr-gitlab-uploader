@@ -1,7 +1,8 @@
 # GitLab Uploader — Chrome Extension
 
-A browser extension that lets you commit files directly to a GitLab repository from any webpage. Drop files, write a commit message, pick a branch, and push — without leaving your browser.
+A browser extension that lets you commit files directly to a GitLab repository from any webpage. Drop files, write a commit message, pick a branch, and push without leaving your browser.
 
+![](image.png)
 ## Features
 
 - Drag-and-drop (or click-to-browse) file selection
